@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7RHDP2246Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7RHDP2246Z');
+    </script>
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>YLBS - Liquidity Protocol</title>
+    <meta name="description" content="Liquidity Protocol" />
+    <meta property="og:title" content="YLBS - Liquidity Protocol" />
+    <meta property="og:description" content="Liquidity Protocol" />
+    <meta name="keywords"
+        content="Decentralized Finance, DeFi, lending, borrowing, stablecoins, Ethereum, assets, erc-20, smart contracts, open finance, trustless" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0C0C0D" />
+    <meta name="theme-color" content="#0C0C0D" />
+    <meta name="next-head-count" content="11" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <style data-emotion="css-global 0"></style>
+    <style data-emotion="css-global yiod8j">
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            box-sizing: border-box;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        strong,
+        b {
+            font-weight: 700;
+        }
+
+        body {
+            margin: 0;
+            color: #F1F1F3;
+            background-color: #0C0C0D;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+            }
+        }
+
+        body::backdrop {
+            background-color: #0C0C0D;
+        }
+
+        body {
+            font-family: Inter, Arial;
+            font-weight: 400;
+            font-size: 0.875rem;
+            min-width: 375px;
+            background: #0C0C0D;
+        }
+
+        body>div:first-of-type {
+            min-height: 100vh;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+    </style>
+    <style
+        data-emotion="css lil13h ihmh1q 1o3srk9 1gux690 1kxndi 1rm1u0w 13s11fv hcir4x 4h1p62 1fntiux 169xyxc 3vgeie 1f39rof jj2t4e 13lx413 vbys12 et72g0 og23lc 15kejy1 1eyq65h 1fl13yw 1pyctib zthcuz 11fv7nf 197knwp anqhok 37xmrs dulrw9 b49gz8 1ocyrca 2g8u1a 1p9h2nx 1pkchv5 1pjqbg1 8rqcji bq6tcf 17jdb6n 18n35mi 1l6c7y9 14jbume z2z9ww 1le3zf5 9h9fxd yemji0 nxiqhz 1hdbc19 4v6qwi p4jafz mrvbr9 1jo1q53">
+        .css-lil13h {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 100vh;
+            width: 100vw;
+            padding: 0;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background-image: url('/background-main.svg');
+            background-repeat: no-repeat;
+            -webkit-background-position: center 0px;
+            background-position: center 0px;
+        }
+
+        .css-ihmh1q {
+            height: 64px;
+            width: 100vw;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            -webkit-transition: top 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: top 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            z-index: 1100;
+            background-color: rgba(12, 12, 13, 0.24);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            -webkit-backdrop-filter: blur(24px);
+            backdrop-filter: blur(24px);
+        }
+
+        @media (min-width:0px) {
+            .css-ihmh1q {
+                padding: 12px 16px;
+            }
+        }
+
+        @media (min-width:640px) {
+            .css-ihmh1q {
+                padding: 12px 24px;
+            }
+        }
+
+        .css-1o3srk9 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1240px;
+            width: 100%;
+        }
+
+        .css-1gux690 {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 400;
+            letter-spacing: 0.009375rem;
+            line-height: 143%;
+            font-size: 0.875rem;
+            color: #EAEBEF;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            line-height: 0;
+            margin-right: 12px;
+            -webkit-transition: 0.3s ease all;
+            transition: 0.3s ease all;
+        }
+
+        .css-1gux690:hover {
+            opacity: 0.7;
+        }
+
+        .css-1kxndi {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 400;
+            letter-spacing: 0.009375rem;
+            line-height: 143%;
+            font-size: 0.875rem;
+            color: #EAEBEF;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            min-width: 64px;
+            padding: 6px 8px;
+            border-radius: 4px;
+            -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            color: #EAEBEF;
+            box-shadow: none;
+            border-radius: 10px;
+            font-family: Inter, Arial;
+            font-weight: 500;
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+            height: 36px;
+            border-radius: 8px;
+            color: #074245;
+            background-color: #AFF113;
+        }
+
+        .css-1kxndi::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-1kxndi.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-1kxndi {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-1kxndi:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: rgba(234, 235, 239, 0.08);
+        }
+
+        @media (hover: none) {
+            .css-1kxndi:hover {
+                background-color: transparent;
+            }
+        }
+
+        .css-1kxndi.Mui-disabled {
+            color: #EBEBEF4D;
+        }
+
+        .css-1kxndi:hover {
+            box-shadow: none;
+        }
+
+        .css-1kxndi.Mui-focusVisible {
+            box-shadow: none;
+        }
+
+        .css-1kxndi:active {
+            box-shadow: none;
+        }
+
+        .css-1kxndi.Mui-disabled {
+            box-shadow: none;
+        }
+
+        .css-1kxndi:hover {
+            background-color: #cafc53;
+        }
+
+        .css-1rm1u0w {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            max-width: 1240px;
+            width: 100%;
+            margin: 0 auto;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .css-13s11fv {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        @media (min-width:0px) {
+            .css-13s11fv {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+
+        @media (min-width:1280px) {
+            .css-13s11fv {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+
+        .css-hcir4x {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        @media (min-width:0px) {
+            .css-hcir4x {
+                width: calc(100vw - 48px);
+                margin-top: 80px;
+                gap: 16px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-hcir4x {
+                width: 768px;
+                margin-top: 120px;
+                gap: 24px;
+            }
+        }
+
+        .css-4h1p62 {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 700;
+            letter-spacing: 0.015625rem;
+            line-height: 123.5%;
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -1.12px;
+            text-align: center;
+        }
+
+        @media (min-width:0px) {
+            .css-4h1p62 {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-4h1p62 {
+                font-size: 56px;
+                line-height: 60px;
+            }
+        }
+
+        @media (min-width:0px) {
+            .css-1fntiux {
+                display: block;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1fntiux {
+                display: none;
+            }
+        }
+
+        .css-169xyxc {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 4px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 44px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: -20px;
+        }
+
+        .css-169xyxc>div {
+            margin-bottom: -8px;
+            -webkit-transform: scale(0.75);
+            -moz-transform: scale(0.75);
+            -ms-transform: scale(0.75);
+            transform: scale(0.75);
+        }
+
+        .css-3vgeie {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: start;
+            justify-content: start;
+            width: 180px;
+        }
+
+        .css-1f39rof {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 400;
+            letter-spacing: 0.009375rem;
+            line-height: 143%;
+            font-size: 0.875rem;
+            color: #ABABBF;
+            font-weight: 500;
+            letter-spacing: 0.06px;
+            text-align: center;
+        }
+
+        @media (min-width:0px) {
+            .css-1f39rof {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1f39rof {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        .css-jj2t4e {
+            width: 100%;
+        }
+
+        @media (min-width:0px) {
+            .css-jj2t4e {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                grid-template-columns: unset;
+                gap: 12px;
+                margin-top: 72px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-jj2t4e {
+                display: grid;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+                margin-top: 96px;
+            }
+        }
+
+        .css-jj2t4e>* {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        @media (min-width:0px) {
+            .css-jj2t4e>* {
+                gap: 16px;
+                padding: 32px;
+                min-height: 224px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-jj2t4e>* {
+                gap: 24px;
+                padding: 24px;
+                min-height: 280px;
+            }
+        }
+
+        .css-13lx413 {
+            background: radial-gradient(23.57% 25.78% at 16.96% 19.14%, rgba(189, 242, 44, 0.08) 0%, rgba(189, 242, 44, 0.00) 100%), #18181B;
+        }
+
+        @media (min-width:0px) {
+            .css-vbys12 {
+                position: absolute;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-vbys12 {
+                position: static;
+            }
+        }
+
+        @media (min-width:0px) {
+            .css-vbys12>img {
+                width: 40px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-vbys12>img {
+                width: 48px;
+            }
+        }
+
+        .css-et72g0 {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 600;
+            letter-spacing: unset;
+            line-height: 133.4%;
+            font-size: 1.3125rem;
+            font-weight: 600;
+            line-height: 120%;
+            letter-spacing: -0.32px;
+        }
+
+        @media (min-width:0px) {
+            .css-et72g0 {
+                font-size: 28px;
+                margin-left: 52px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-et72g0 {
+                font-size: 32px;
+                margin-left: 0;
+            }
+        }
+
+        .css-og23lc {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 500;
+            letter-spacing: 0.009375rem;
+            line-height: 1.5rem;
+            font-size: 1rem;
+            color: #D3D3DE;
+            font-size: 18px;
+        }
+
+        .css-15kejy1 {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 400;
+            letter-spacing: 0.009375rem;
+            line-height: 143%;
+            font-size: 0.875rem;
+            color: #EAEBEF;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        .css-1eyq65h {
+            background: radial-gradient(22.84% 23.02% at 17.32% 19.14%, rgba(111, 69, 247, 0.12) 0%, rgba(111, 69, 247, 0.00) 100%), #18181B;
+        }
+
+        .css-1fl13yw {
+            background: radial-gradient(24.28% 26.06% at 17.68% 19.14%, rgba(49, 252, 221, 0.08) 0%, rgba(49, 252, 221, 0.00) 100%), #18181B;
+        }
+
+        .css-1pyctib {
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: radial-gradient(40.54% 77.36% at 24.21% 50%, rgba(189, 242, 44, 0.08) 0%, rgba(189, 242, 44, 0.00) 100%), #18181B;
+        }
+
+        @media (min-width:0px) {
+            .css-1pyctib {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column-reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+                grid-template-columns: unset;
+                gap: 32px;
+                width: 100vw;
+                margin-top: 72px;
+                padding: 32px 16px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1pyctib {
+                display: grid;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                grid-template-columns: auto 456px;
+                gap: 80px;
+                width: 100%;
+                margin-top: 96px;
+                padding: 80px 64px;
+            }
+        }
+
+        .css-zthcuz {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 24px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .css-11fv7nf {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 600;
+            letter-spacing: unset;
+            line-height: 133.4%;
+            font-size: 1.3125rem;
+            font-weight: 600;
+        }
+
+        @media (min-width:0px) {
+            .css-11fv7nf {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-11fv7nf {
+                font-size: 40px;
+                line-height: 46px;
+            }
+        }
+
+        .css-197knwp {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 500;
+            line-height: 133.4%;
+            font-size: 1.3125rem;
+            color: #D3D3DE;
+        }
+
+        @media (min-width:0px) {
+            .css-197knwp {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-197knwp {
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width:0px) {
+            .css-anqhok>img {
+                width: 100%;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-anqhok>img {
+                width: auto;
+            }
+        }
+
+        .css-37xmrs {
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: radial-gradient(40.54% 77.36% at 24.21% 50%, rgba(189, 242, 44, 0.08) 0%, rgba(189, 242, 44, 0.00) 100%), #18181B;
+        }
+
+        @media (min-width:0px) {
+            .css-37xmrs {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                grid-template-columns: unset;
+                gap: 32px;
+                width: 100vw;
+                margin-top: 16px;
+                padding: 32px 16px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-37xmrs {
+                display: grid;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                grid-template-columns: 544px auto;
+                gap: 80px;
+                width: 100%;
+                margin-top: 24px;
+                padding: 80px 64px;
+            }
+        }
+
+        .css-dulrw9 {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 600;
+            letter-spacing: unset;
+            line-height: 133.4%;
+            font-size: 1.3125rem;
+        }
+
+        @media (min-width:0px) {
+            .css-dulrw9 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-dulrw9 {
+                font-size: 40px;
+                line-height: 46px;
+            }
+        }
+
+        .css-b49gz8 {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 700;
+            letter-spacing: 0.015625rem;
+            line-height: 123.5%;
+            font-size: 2rem;
+            color: 3F1F1F3;
+            font-weight: 600;
+        }
+
+        @media (min-width:0px) {
+            .css-b49gz8 {
+                font-size: 32px;
+                line-height: 36px;
+                margin-top: 72px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-b49gz8 {
+                font-size: 48px;
+                line-height: 52px;
+                margin-top: 96px;
+            }
+        }
+
+        .css-1ocyrca {
+            width: 100%;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background-color: #18181B;
+        }
+
+        @media (min-width:0px) {
+            .css-1ocyrca {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column-reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+                grid-template-columns: unset;
+                gap: 32px;
+                margin-top: 24px;
+                padding: 32px 16px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1ocyrca {
+                display: grid;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                grid-template-columns: auto 544px;
+                gap: 80px;
+                margin-top: 40px;
+                padding: 64px;
+            }
+        }
+
+        .css-2g8u1a {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .css-2g8u1a>div {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+        }
+
+        @media (min-width:0px) {
+            .css-2g8u1a>div {
+                padding: 16px 20px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-2g8u1a>div {
+                padding: 20px 24px;
+            }
+        }
+
+        .css-2g8u1a>div:hover {
+            background-color: #1F1F23;
+            color: #D3D3DE;
+        }
+
+        .css-1p9h2nx {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 600;
+            letter-spacing: unset;
+            line-height: 133.4%;
+            font-size: 1.3125rem;
+            font-weight: 600;
+        }
+
+        @media (min-width:0px) {
+            .css-1p9h2nx {
+                font-size: 28px;
+                line-height: 36px;
+                margin-bottom: 16px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1p9h2nx {
+                font-size: 40px;
+                line-height: 46px;
+                margin-bottom: 24px;
+            }
+        }
+
+        .css-1pkchv5 {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 600;
+            letter-spacing: 0.009375rem;
+            line-height: 160%;
+            font-size: 1.125rem;
+            color: #F1F1F3;
+            font-weight: 600;
+            margin: 0px;
+        }
+
+        @media (min-width:0px) {
+            .css-1pkchv5 {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1pkchv5 {
+                font-size: 24px;
+            }
+        }
+
+        .css-1pjqbg1 {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 500;
+            letter-spacing: 0.009375rem;
+            line-height: 1.5rem;
+            font-size: 1rem;
+            color: #696986;
+        }
+
+        @media (min-width:0px) {
+            .css-1pjqbg1 {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1pjqbg1 {
+                font-size: 18px;
+            }
+        }
+
+        .css-8rqcji {
+            margin: auto 0;
+        }
+
+        @media (min-width:0px) {
+            .css-8rqcji>img {
+                width: 100%;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-8rqcji>img {
+                width: auto;
+            }
+        }
+
+        .css-bq6tcf {
+            width: 100%;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background-color: #18181B;
+        }
+
+        @media (min-width:0px) {
+            .css-bq6tcf {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                grid-template-columns: unset;
+                gap: 32px;
+                margin-top: 16px;
+                padding: 32px 16px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-bq6tcf {
+                display: grid;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                grid-template-columns: 544px auto;
+                gap: 80px;
+                margin-top: 24px;
+                padding: 64px;
+            }
+        }
+
+        .css-17jdb6n {
+            width: 100%;
+        }
+
+        @media (min-width:0px) {
+            .css-17jdb6n {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                grid-template-columns: unset;
+                gap: 12px;
+                margin-top: 16px;
+                margin-bottom: 80px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-17jdb6n {
+                display: grid;
+                -webkit-flex-direction: unset;
+                -ms-flex-direction: unset;
+                flex-direction: unset;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+                margin-top: 24px;
+                margin-bottom: 144px;
+            }
+        }
+
+        .css-17jdb6n>* {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        @media (min-width:0px) {
+            .css-17jdb6n>* {
+                gap: 16px;
+                padding: 32px;
+                min-height: 198px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-17jdb6n>* {
+                gap: 24px;
+                padding: 24px;
+                min-height: 256px;
+            }
+        }
+
+        .css-18n35mi {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            min-width: 64px;
+            padding: 5px 15px;
+            border-radius: 4px;
+            -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            border: 1px solid rgba(234, 235, 239, 0.5);
+            color: #EAEBEF;
+            box-shadow: none;
+            border-radius: 10px;
+            font-family: Inter, Arial;
+            font-weight: 500;
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+            height: 36px;
+            border-radius: 8px;
+            background: #26262b;
+            border-color: rgba(255, 255, 255, 0.06);
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+        }
+
+        .css-18n35mi::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-18n35mi.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-18n35mi {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-18n35mi:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: rgba(234, 235, 239, 0.08);
+            border: 1px solid #EAEBEF;
+        }
+
+        @media (hover: none) {
+            .css-18n35mi:hover {
+                background-color: transparent;
+            }
+        }
+
+        .css-18n35mi.Mui-disabled {
+            color: #EBEBEF4D;
+            border: 1px solid #EBEBEF1F;
+        }
+
+        .css-18n35mi:hover {
+            box-shadow: none;
+        }
+
+        .css-18n35mi.Mui-focusVisible {
+            box-shadow: none;
+        }
+
+        .css-18n35mi:active {
+            box-shadow: none;
+        }
+
+        .css-18n35mi.Mui-disabled {
+            box-shadow: none;
+        }
+
+        .css-1l6c7y9 {
+            display: inherit;
+            margin-right: 8px;
+            margin-left: -4px;
+        }
+
+        .css-1l6c7y9>*:nth-of-type(1) {
+            font-size: 20px;
+        }
+
+        .css-14jbume {
+            width: 100vw;
+            padding: 32px 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.16);
+            background: linear-gradient(180deg, rgba(79, 79, 99, 0.08) 0%, rgba(79, 79, 99, 0.00) 100%);
+            -webkit-backdrop-filter: blur(24px);
+            backdrop-filter: blur(24px);
+        }
+
+        .css-z2z9ww {
+            display: grid;
+            margin: 0 auto;
+            max-width: 1240px;
+            width: 100%;
+        }
+
+        @media (min-width:0px) {
+            .css-z2z9ww {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, auto);
+                grid-template-areas: "a b" "c d";
+                -webkit-column-gap: 32px;
+                column-gap: 32px;
+                row-gap: 32px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-z2z9ww {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: unset;
+                grid-template-areas: unset;
+                -webkit-column-gap: 48px;
+                column-gap: 48px;
+                row-gap: unset;
+            }
+        }
+
+        @media (min-width:0px) {
+            .css-1le3zf5 {
+                grid-area: a;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1le3zf5 {
+                grid-area: unset;
+            }
+        }
+
+        .css-1le3zf5>img {
+            margin-bottom: 4px;
+        }
+
+        @media (min-width:0px) {
+            .css-1le3zf5>img {
+                width: 140px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1le3zf5>img {
+                width: 160px;
+            }
+        }
+
+        .css-9h9fxd {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 500;
+            letter-spacing: 0.009375rem;
+            line-height: 1.25rem;
+            font-size: 0.875rem;
+            color: #ABABBF;
+        }
+
+        @media (min-width:0px) {
+            .css-9h9fxd {
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-9h9fxd {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width:0px) {
+            .css-yemji0 {
+                grid-area: c;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-yemji0 {
+                grid-area: unset;
+            }
+        }
+
+        .css-nxiqhz {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 600;
+            letter-spacing: 0.009375rem;
+            line-height: 1.5rem;
+            font-size: 1rem;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .css-1hdbc19 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .css-4v6qwi {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 400;
+            letter-spacing: 0.009375rem;
+            line-height: 143%;
+            font-size: 0.875rem;
+            color: #EAEBEF;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 8px;
+            color: #ABABBF;
+            font-size: 16px;
+        }
+
+        .css-4v6qwi:hover {
+            color: #c7c7d4;
+        }
+
+        .css-p4jafz {
+            margin: 0;
+            font-family: Inter, Arial;
+            font-weight: 400;
+            letter-spacing: 0.009375rem;
+            line-height: 143%;
+            font-size: 0.875rem;
+            color: #EAEBEF;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 8px;
+            color: #ABABBF;
+            font-size: 16px;
+        }
+
+        .css-p4jafz:hover {
+            color: #c7c7d4;
+        }
+
+        @media (min-width:0px) {
+            .css-mrvbr9 {
+                grid-area: b;
+                margin-top: 16px;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-mrvbr9 {
+                grid-area: unset;
+                margin-top: 0;
+            }
+        }
+
+        @media (min-width:0px) {
+            .css-1jo1q53 {
+                grid-area: d;
+            }
+        }
+
+        @media (min-width:960px) {
+            .css-1jo1q53 {
+                grid-area: unset;
+            }
+        }
+    </style>
+    <link rel="preload" href="/_next/static/css/3d998dd6e24184a9.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/3d998dd6e24184a9.css" data-n-g="" /><noscript
+        data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+    <script defer="" src="/_next/static/chunks/6165-08d599132eb2dfc2.js"></script>
+    <script defer="" src="/_next/static/chunks/8873-56bcd40e3df146af.js"></script>
+    <script defer="" src="/_next/static/chunks/468-eff1ce31e4bcc25c.js"></script>
+    <script defer="" src="/_next/static/chunks/5772.342d836e0854e873.js"></script>
+    <script defer="" src="/_next/static/chunks/29107295-b133b9f0bd8c6f37.js"></script>
+    <script defer="" src="/_next/static/chunks/5278-27b157dc4d1cdc1c.js"></script>
+    <script defer="" src="/_next/static/chunks/626-248edd0b21e866e0.js"></script>
+    <script defer="" src="/_next/static/chunks/729-95c2a86ce8625fcb.js"></script>
+    <script defer="" src="/_next/static/chunks/534-8684901501cd5a27.js"></script>
+    <script defer="" src="/_next/static/chunks/1878-28cfa98ae9c3d2ea.js"></script>
+    <script defer="" src="/_next/static/chunks/1618-717edfb26180b6c9.js"></script>
+    <script defer="" src="/_next/static/chunks/7331-b4cf0f21ea5b16b4.js"></script>
+    <script defer="" src="/_next/static/chunks/9816-15c541bd2cbe7347.js"></script>
+    <script defer="" src="/_next/static/chunks/5813.16384368ab3c06d7.js"></script>
+    <script defer="" src="/_next/static/chunks/6901-573cb1d896643758.js"></script>
+    <script defer="" src="/_next/static/chunks/2921.80fd1f8cf2664aa5.js"></script>
+    <script defer="" src="/_next/static/chunks/4209.5cf0242f6e4a3bc9.js"></script>
+    <script defer="" src="/_next/static/chunks/1011-501bad4458803b6c.js"></script>
+    <script defer="" src="/_next/static/chunks/2490-171dda9269f23397.js"></script>
+    <script defer="" src="/_next/static/chunks/7529-f3b58e3179846222.js"></script>
+    <script defer="" src="/_next/static/chunks/1877.1a6d309766a9a04b.js"></script>
+    <script defer="" src="/_next/static/chunks/1741.acf355f7121db3d5.js"></script>
+    <script defer="" src="/_next/static/chunks/4691.4e49a511c17d5d3e.js"></script>
+    <script defer="" src="/_next/static/chunks/8497.b5e92ebd7462d94d.js"></script>
+    <script defer="" src="/_next/static/chunks/3808.c88f41aff00d0087.js"></script>
+    <script defer="" src="/_next/static/chunks/1440.fd7379ccb1c21be5.js"></script>
+    <script defer="" src="/_next/static/chunks/5031.c360ee653dbb3fd5.js"></script>
+    <script defer="" src="/_next/static/chunks/8403-9d63b5ec24dce2db.js"></script>
+    <script defer="" src="/_next/static/chunks/640.997d12a6f294441e.js"></script>
+    <script defer="" src="/_next/static/chunks/4716-5f2a35471194a674.js"></script>
+    <script defer="" src="/_next/static/chunks/4178.c867f653ab73f2d4.js"></script>
+    <script defer="" src="/_next/static/chunks/1324.5bc183e9414c91aa.js"></script>
+    <script defer="" src="/_next/static/chunks/8397.66a2a51c029a9dff.js"></script>
+    <script defer="" src="/_next/static/chunks/762-88b024a9ee2c89d3.js"></script>
+    <script defer="" src="/_next/static/chunks/6070.b4362604c70587dc.js"></script>
+    <script defer="" src="/_next/static/chunks/5525-f8098cba7a9d6158.js"></script>
+    <script defer="" src="/_next/static/chunks/3977.fb6e70aaa7ef7eb4.js"></script>
+    <script defer="" src="/_next/static/chunks/1998.50fab4ce2747ceab.js"></script>
+    <script defer="" src="/_next/static/chunks/284-fb7c211322df628b.js"></script>
+    <script defer="" src="/_next/static/chunks/3062-73c2d0d4b04fffeb.js"></script>
+    <script defer="" src="/_next/static/chunks/6969.d4943df65f13be4d.js"></script>
+    <script defer="" src="/_next/static/chunks/1941.65eefd3fc91508f5.js"></script>
+    <script defer="" src="/_next/static/chunks/3554.10ce25d2c004a743.js"></script>
+    <script defer="" src="/_next/static/chunks/817.94e893e05164f221.js"></script>
+    <script defer="" src="/_next/static/chunks/6993.5a77636442989830.js"></script>
+    <script defer="" src="/_next/static/chunks/6658.613a03be2788b0db.js"></script>
+    <script src="/_next/static/chunks/webpack-15538c2ea341b818.js" defer=""></script>
+    <script src="/_next/static/chunks/framework-ec7578bc3e7e9c78.js" defer=""></script>
+    <script src="/_next/static/chunks/main-3aede4cb5022eadc.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-4690a918ec3967f9.js" defer=""></script>
+    <script src="/_next/static/chunks/1066-875fc969bbaaf033.js" defer=""></script>
+    <script src="/_next/static/chunks/5691-0a79c09ac8526ed4.js" defer=""></script>
+    <script src="/_next/static/chunks/3098-572f1a0896789d65.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/index-7e9eaf72177f474f.js" defer=""></script>
+    <script src="/_next/static/huL_5c3EUL3xWU-TBZRG_/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/huL_5c3EUL3xWU-TBZRG_/_ssgManifest.js" defer=""></script>
+    <script src="/_next/static/huL_5c3EUL3xWU-TBZRG_/_middlewareManifest.js" defer=""></script>
+</head>
+
+<body>
+    <div id="__next">
+        <div class="css-lil13h">
+            <header class="MuiBox-root css-ihmh1q">
+                <div class="MuiBox-root css-1o3srk9"><a
+                        class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone MuiBox-root active css-1gux690"
+                        aria-label="Go to homepage" href="/"><img src="/ylbs-logo.svg" alt="AAVE" width="96"
+                            height="40" /></a><a
+                        class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1kxndi"
+                        tabindex="0" href="/leverage/">Launch App</a></div>
+            </header>
+            <main class="MuiBox-root css-1rm1u0w">
+                <div class="MuiBox-root css-13s11fv">
+                    <div class="MuiBox-root css-hcir4x">
+                        <h1 class="MuiTypography-root MuiTypography-h1 css-4h1p62">
+                            <div class="MuiBox-root css-1fntiux">
+                                <div class="MuiBox-root css-0">Leverage your</div>
+                                <div class="MuiBox-root css-169xyxc">
+                                    <div class="MuiBox-root css-3vgeie"></div>position
+                                </div>
+                                <div class="MuiBox-root css-0">or get a loan for it</div>
+                            </div>
+                        </h1>
+                        <p class="MuiTypography-root MuiTypography-description css-1f39rof">YLBS Protocol allows anyone
+                            to boost LP returns, borrow digital assets against LP position or other assets, and supply
+                            liquidity to earn yield</p>
+                    </div>
+                    <div class="MuiBox-root css-jj2t4e">
+                        <div class="MuiBox-root css-13lx413">
+                            <div class="MuiBox-root css-vbys12"><img src="/leverage.svg" alt="" /></div>
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-et72g0">Leverage</h2>
+                            <p class="MuiTypography-root MuiTypography-secondary16 css-og23lc">Leverage LP returns and
+                                increase your exposure</p><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-15kejy1"
+                                href="/leverage/"><img src="/icon-button.svg" alt="" /></a>
+                        </div>
+                        <div class="MuiBox-root css-1eyq65h">
+                            <div class="MuiBox-root css-vbys12"><img src="/borrow.svg" alt="" /></div>
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-et72g0">Borrow</h2>
+                            <p class="MuiTypography-root MuiTypography-secondary16 css-og23lc">Get instant loan for your
+                                position or digital assets</p><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-15kejy1"
+                                href="/lending/"><img src="/icon-button.svg" alt="" /></a>
+                        </div>
+                        <div class="MuiBox-root css-1fl13yw">
+                            <div class="MuiBox-root css-vbys12"><img src="/supply.svg" alt="" /></div>
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-et72g0">Supply</h2>
+                            <p class="MuiTypography-root MuiTypography-secondary16 css-og23lc">Supply liquidity to earn
+                                delta-neutral returns</p><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-15kejy1"
+                                href="/lending/"><img src="/icon-button.svg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="MuiBox-root css-1pyctib">
+                        <div class="MuiBox-root css-zthcuz">
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-11fv7nf">Leverage your LP positions</h2>
+                            <p class="MuiTypography-root MuiTypography-secondary21 css-197knwp">Earn up to 5x in fees.
+                                Boost LP returns without losing ownership of your initial position.</p>
+                        </div>
+                        <div class="MuiBox-root css-anqhok"><img src="/leverage-position.svg" alt="" /></div>
+                    </div>
+                    <div class="MuiBox-root css-37xmrs">
+                        <div class="MuiBox-root css-anqhok"><img src="/borrow-for-uniswap.svg" alt="" /></div>
+                        <div class="MuiBox-root css-zthcuz">
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-dulrw9">Borrow for LP position <br />or
+                                digital assets</h2>
+                            <p class="MuiTypography-root MuiTypography-secondary21 css-197knwp">Put your position at
+                                work. Use your positions or digital assets as a collateral to borrow more assets, while
+                                still earning fees as a liquidity provider.</p>
+                        </div>
+                    </div>
+                    <h1 class="MuiTypography-root MuiTypography-h1 css-b49gz8">How it works</h1>
+                    <div class="MuiBox-root css-1ocyrca">
+                        <div class="MuiBox-root css-2g8u1a">
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-1p9h2nx">Leverage</h2>
+                            <div class="MuiBox-root css-0">
+                                <h3 class="MuiTypography-root MuiTypography-h3 css-1pkchv5">Leverage LP position</h3>
+                                <p class="MuiTypography-root MuiTypography-secondary16 css-1pjqbg1">Use your position as
+                                    a collateral to borrow more liquidity from the market in a single transaction.</p>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                                <h3 class="MuiTypography-root MuiTypography-h3 css-1pkchv5">Boost your fees up to 5x
+                                </h3>
+                                <p class="MuiTypography-root MuiTypography-secondary16 css-1pjqbg1">Get instant
+                                    liquidity and earn up to 5x more trading fees.</p>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                                <h3 class="MuiTypography-root MuiTypography-h3 css-1pkchv5">Get your position back</h3>
+                                <p class="MuiTypography-root MuiTypography-secondary16 css-1pjqbg1">Simply repay the
+                                    debt and get initial position back to wallet.</p>
+                            </div>
+                        </div>
+                        <div class="MuiBox-root css-8rqcji"><img src="/leverage-scheme.svg" alt="" /></div>
+                    </div>
+                    <div class="MuiBox-root css-bq6tcf">
+                        <div class="MuiBox-root css-8rqcji"><img src="/trading-fees.svg" alt="" /></div>
+                        <div class="MuiBox-root css-2g8u1a">
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-1p9h2nx">Borrow</h2>
+                            <div class="MuiBox-root css-0">
+                                <h3 class="MuiTypography-root MuiTypography-h3 css-1pkchv5">Put your LP position at work
+                                </h3>
+                                <p class="MuiTypography-root MuiTypography-secondary16 css-1pjqbg1">Previously, when
+                                    user created liquidity provider position he couldn’t use those funds.</p>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                                <h3 class="MuiTypography-root MuiTypography-h3 css-1pkchv5">Get instant liquidity</h3>
+                                <p class="MuiTypography-root MuiTypography-secondary16 css-1pjqbg1">Get a loan for your
+                                    position or any digital asset to use new liquidity in any way you want.</p>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                                <h3 class="MuiTypography-root MuiTypography-h3 css-1pkchv5">Get your position or asset
+                                    back</h3>
+                                <p class="MuiTypography-root MuiTypography-secondary16 css-1pjqbg1">Simply repay the
+                                    debt and get your initial position or digital asset back to your wallet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="MuiTypography-root MuiTypography-h1 css-b49gz8">Safety</h1>
+                    <div class="MuiBox-root css-17jdb6n">
+                        <div class="MuiBox-root css-1eyq65h">
+                            <div class="MuiBox-root css-vbys12"><img src="/assets-in-control.svg" alt="" /></div>
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-et72g0">Secured</h2>
+                            <p class="MuiTypography-root MuiTypography-secondary16 css-og23lc">YLBS&#x27;s smart
+                                contracts are audited by CertiK, a renowned blockchain security company.</p><a
+                                class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-disableElevation css-18n35mi"
+                                tabindex="0" href="https://ylbs.gitbook.io/ylbs/audits/audits" target="_blank"><span
+                                    class="MuiButton-startIcon MuiButton-iconSizeMedium css-1l6c7y9"><img
+                                        src="/certik-icon.svg" alt="" /></span>Audited by CertiK</a>
+                        </div>
+                        <div class="MuiBox-root css-13lx413">
+                            <div class="MuiBox-root css-vbys12"><img src="/decentralized.svg" alt="" /></div>
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-et72g0">Decentralized</h2>
+                            <p class="MuiTypography-root MuiTypography-secondary16 css-og23lc">YLBS protocol is
+                                decentralized, and operations are performed by smart contracts.</p>
+                        </div>
+                        <div class="MuiBox-root css-1fl13yw">
+                            <div class="MuiBox-root css-vbys12"><img src="/transparent.svg" alt="" /></div>
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-et72g0">Non-custodial</h2>
+                            <p class="MuiTypography-root MuiTypography-secondary16 css-og23lc">YLBS protocol do not
+                                maintain control over user’s assets, they can be withdrawn at any time.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="MuiBox-root css-14jbume">
+                <div class="MuiBox-root css-z2z9ww">
+                    <div class="MuiBox-root css-1le3zf5"><img src="/ylbs-logo.svg" alt="" />
+                        <p class="MuiTypography-root MuiTypography-secondary14 css-9h9fxd">Copyright ©
+                            <!-- -->2024<!-- --> YLBS</p>
+                    </div>
+                    <div class="MuiBox-root css-yemji0">
+                        <p class="MuiTypography-root MuiTypography-main16 css-nxiqhz">Products</p>
+                        <div class="MuiBox-root css-1hdbc19"><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-p4jafz"
+                                href="/leverage/">Leverage</a><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-p4jafz"
+                                href="/lending/">Borrow</a><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-p4jafz"
+                                href="/lending/">Lend</a></div>
+                    </div>
+                    <div class="MuiBox-root css-mrvbr9">
+                        <p class="MuiTypography-root MuiTypography-main16 css-nxiqhz">About</p>
+                        <div class="MuiBox-root css-1hdbc19"><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-4v6qwi"
+                                href="https://ylbs.gitbook.io/ylbs/" target="_blank" rel="noopener">Docs</a><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-p4jafz"
+                                href="/terms-of-service/">Terms of Service</a><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-p4jafz"
+                                href="/privacy-policy/">Privacy Policy</a></div>
+                    </div>
+                    <div class="MuiBox-root css-1jo1q53">
+                        <p class="MuiTypography-root MuiTypography-main16 css-nxiqhz">Socials</p>
+                        <div class="MuiBox-root css-1hdbc19"><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-4v6qwi"
+                                href="https://twitter.com/ylbscom" target="_blank" rel="noopener"><img
+                                    src="/twitter.svg" alt="" /> Twitter</a><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-4v6qwi"
+                                href="https://t.me/ylbscom" target="_blank" rel="noopener"><img src="/telegram.svg"
+                                    alt="" /> Telegram</a><a
+                                class="MuiTypography-root MuiTypography-description MuiLink-root MuiLink-underlineNone css-4v6qwi"
+                                href="https://discord.gg/FgVKU48QFk" target="_blank" rel="noopener"><img
+                                    src="/discord.svg" alt="" /> Discord</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="__NEXT_DATA__"
+        type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"huL_5c3EUL3xWU-TBZRG_","nextExport":true,"autoExport":true,"isFallback":false,"dynamicIds":[35772,60520,44209,8497,46443,71440,97284,35264,76682,42862,64076,38183,11998,2200,81941,33554,33259,38853,16813],"scriptLoader":[]}</script>
+</body>
+
+</html>
